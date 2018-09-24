@@ -59,6 +59,13 @@
           Add Goal »
         </a>
         
+        <!-- Will not be visible to role_user. Only visible to admin -->
+        <sec:authorize ifAnyGranted="ROLE_ADMIN">
+        	 <a class="btn btn-primary" href="editGoal.html">
+          Edit Goal »
+        </a>
+        </sec:authorize>
+        
         <a class="btn btn-primary" href="addMinutes.html">
           Add Exercise Minutes »
         </a>
