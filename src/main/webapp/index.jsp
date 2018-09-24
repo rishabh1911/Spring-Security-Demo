@@ -1,3 +1,7 @@
+<%@taglib prefix="sec" uri="http://www.springframework.org/security/tags" %>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
   
@@ -43,6 +47,7 @@
       <div class="hero-unit">
         <div>
           <h1>
+          	Hi <sec:authentication property="name"/>,
             Welcome to Fitness Tracker!
           </h1>
           <p>
