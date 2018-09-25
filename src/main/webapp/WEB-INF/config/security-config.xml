@@ -19,7 +19,7 @@
 	
 	<authentication-manager>
 		<authentication-provider>
-			<password-encoder hash="md5"/>
+			<password-encoder hash="bcrypt"/>
 			<jdbc-user-service data-source-ref="myDataSource"/>
 		</authentication-provider>
 	</authentication-manager>
